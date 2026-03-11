@@ -1,74 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="style-home.css" />
+
+    <script src="script.js"></script>
+  </head>
+
+  <body>
     <header>
-        <img src="images/kermit-pfp.jpg" alt="Kermit the Frog Profile Picture" class="profile-pic">
-        <h1>Nhyl Cyrus</h1>
+      <img
+        src="images/kermit-pfp.jpg"
+        alt="Profile Picture"
+        class="profile-pic"
+      />
 
-        <nav>
-            <ul class="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+      <h1>Portfolio</h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Blog</a></li>
+
+          <li><a href="project-page.html">Projects</a></li>
+
+          <li><a href="contact-page.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    
 
-    <main>
+    <main class="container">
 
-        <article class="welcome-card">
-            <h1>Welcome to My Website</h1>
-            <p>This is a simple website showcasing my projects, work experience, and education.</p>
-        </article>
+      <section class="hero">
+        <img
+          src="images/kermit-gradpic.webp"
+          class="hero-img"
+          alt="Profile Photo"
+        />
 
-        <article class="cards">
-            <span class="project-card">
-                <h2>Project</h2>
+        <div class="hero-text">
+          <h2>Nhyl Cyrus J. Gervasio</h2>
 
-                <ul class="project-list">
-                    <li>I.D Processing System</li>
-                    <li>Alumni Management System</li>
-                    <li>Cloud-Based Construction Operations Management System </li>
-                </ul>
-            </span>
-        
-            <span class="work-card">
-                <h2>Work</h2>
+          <p>
+            Motivated IT student seeking entry-level opportunities in software
+            development, data encoding, and computer systems. Skilled in
+            programming fundamentals, organization, and problem-solving.
+          </p>
+        </div>
+      </section>
 
-                <ul class="work-list">
-                    <li>
-                        <h4>Work Immersion - Assistant,Engineering Department</h4>
-                        <p>San Jose del Monte City Hall - 80 hours</p>
-                    </li>
-                </ul>
-            </span>
+      <section>
+        <h2 class="section-title">Overview</h2>
 
-            <span class="education-card">
-                <h2>Education</h2>    
+        <div class="grid">
+          <div class="card">
+            <h3>Projects</h3>
 
-                <ul class="education-list">
-                    <li>
-                        <h4>STI College San Jose del Monte</h4>
-                        <p>Bachelor of Science in Information Technology</p>
-                    </li>
+            <ul class="clean-list">
+              <li>I.D Processing System</li>
 
-                    <li>
-                        <h4>San Jose del Monte National High School</h4>
-                        <p>Senior High School - ICT Strand</p>
-                    </li>
-                    
-                </ul>
-            </span>
-        </article>
+              <li>Alumni Management System</li>
 
+              <li>Construction Operations System</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Work Experience</h3>
+
+            <p>Assistant – Engineering Department</p>
+
+            <p>San Jose del Monte City Hall</p>
+
+            <p>80 hours internship</p>
+          </div>
+
+          <div class="card">
+            <h3>Education</h3>
+
+            <p>BS Information Technology</p>
+
+            <p>STI College San Jose del Monte</p>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+
+    <footer>
+      <p>© 2026 Nhyl Cyrus J. Gervasio</p>
+    </footer>
+  </body>
 </html>
