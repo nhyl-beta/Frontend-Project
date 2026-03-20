@@ -1,0 +1,43 @@
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  color: #111;
+
+  position: relative;
+
+  background-image: url(images/doodle-bg.jpg);
+  background-size: contain;       
+  background-repeat: repeat;    
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: rgba(255, 255, 255, 0.4); 
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+footer {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 3.5rem;
+
+  padding: 1rem 0;
+
+  font-size: 0.85rem;
+
+  color: #111;
+}

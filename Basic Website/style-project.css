@@ -77,6 +77,11 @@ nav a {
   transition: color 0.25s ease;
 }
 
+nav a.active {
+  color: #000;
+  font-weight: 600;
+}
+
 nav a::after {
   content: "";
   position: absolute;
